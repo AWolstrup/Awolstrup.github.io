@@ -1,9 +1,9 @@
 Reference,Ele principle,Ele Principle num,Sensing,Sensing num,Print,Print num,M0,M,Delta Er,Rel Sensitivity,Directly Printed,Mat,Mat num,Custom mat,Print concat,Sens concat
 Z. Li et al. 2023 3,Piezoresistive,1,Porous,4,FDM,1,0,5700,-7.50E-01,5.26E-04,b,Carbon,1,b,FDM-b,Porous-b
-C. Ma et al. 2023*,Piezoresistive,1,Material,1,DIW,2,0,10,4.50E+03,4.50E+02,b,Carbon,1,b,DIW-b,Material-b
+C. Ma et al. 2023,Piezoresistive,1,Material,1,DIW,2,0,10,4.50E+03,4.50E+02,b,Carbon,1,b,DIW-b,Material-b
 M. Binelli et al. 2023,Piezoresistive,1,Material,1,DIW,2,200,1000,1.74E+00,2.17E-03,b,Carbon,1,b,DIW-b,Material-b
 Z. Tang et al. 2020,Piezoresistive,1,Surface,3,DIW,2,0,175,1.60E+01,9.14E-02,b,Carbon,1,b,DIW-b,Surface-b
-T. Xia et al. 2021*,Piezoresistive,1,Microcracks,5,SLA,6,0,0.1,4.20E-01,4.20E+00,a,Metal,2,a,SLA-a,Microcracks-a
+T. Xia et al. 2021,Piezoresistive,1,Microcracks,5,SLA,6,0,0.1,4.20E-01,4.20E+00,a,Metal,2,a,SLA-a,Microcracks-a
 Y. Yin et al. 2021,Piezoresistive,1,Porous,4,DLP,5,0,130,1.33E+02,1.02E+00,a,Carbon,1,b,DLP-a,Porous-b
 H. Moeinnia et al. 2024,Capacitance,2,Displacement,6,FDM,1,0,2500,5.00E-01,2.00E-04,b,Carbon,1,a,FDM-b,Displacement-a
 M. Ntagios et al. 2021,Capacitance,2,Displacement,6,FDM,1,0,35,1.25E-01,3.57E-03,b,Carbon,1,a,FDM-b,Displacement-a
