@@ -4,7 +4,7 @@ D. Xiang et al. 2020,Piezoresistive,1,Material,1,FDM,1,0,0.3,9.55E+00,31.82,b,Ca
 J. McGhee et al. 2018,Piezoresistive,1,Material,1,FDM,1,0,0.1,4.78E-01,4.782608696,b,Carbon,1,a,FDM-b,Material-a
 M. Al-Rubaiai et al. 2019,Piezoresistive,1,Material,1,FDM,1,0,0.02,-4.00E-01,33.33333333,b,Carbon,1,a,FDM-b,Material-a
 R. Chirila et al. 2022,Piezoresistive,1,Material,1,FDM,1,0,0.167,4.00E-01,2.395209581,b,Carbon,1,a,FDM-b,Material-a
-S. Mousavi et al. 2020*,Piezoresistive,1,Porous,4,FDM,1,0,0.005,6.71E+00,1342,b,Carbon,1,b,FDM-b,Porous-b
+S. Mousavi et al. 2020,Piezoresistive,1,Porous,4,FDM,1,0,0.005,6.71E+00,1342,b,Carbon,1,b,FDM-b,Porous-b
 S. Mousavi et al. 2022,Piezoresistive,1,Microcracks,5,FDM,1,0,0.97,1.47E+02,151.0309278,a,Carbon,1,b,FDM-a,Microcracks-b
 X. Chen et al. 2022*,Piezoresistive,1,Material,1,FDM,1,0,0.5,5.76E+00,11.52,b,Carbon,1,b,FDM-b,Material-b
 Z. Li et al. 2021,Piezoresistive,1,Porous,4,FDM,1,0,-0.02,1.09E+00,54.58,b,Carbon,1,b,FDM-b,Porous-b
