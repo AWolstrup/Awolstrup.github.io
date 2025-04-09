@@ -1,6 +1,6 @@
 Reference,Ele principle,Ele Principle num,Sensing,Sensing num,Print,Print num,M0,M,Delta Er,Rel Sensitivity,Directly Printed,Mat,Mat num,Custom mat,Print concat,Sens concat
 B. Li et al. 2022,Piezoresistive,1,Auxetic,2,FDM,1,0,0.15,1.30E-01,0.866666667,a,Carbon,1,b,FDM-a,Auxetic-b
-D. Xiang et al. 2020*,Piezoresistive,1,Material,1,FDM,1,0,0.3,9.55E+00,31.82,b,Carbon,1,b,FDM-b,Material-b
+D. Xiang et al. 2020,Piezoresistive,1,Material,1,FDM,1,0,0.3,9.55E+00,31.82,b,Carbon,1,b,FDM-b,Material-b
 J. McGhee et al. 2018,Piezoresistive,1,Material,1,FDM,1,0,0.1,4.78E-01,4.782608696,b,Carbon,1,a,FDM-b,Material-a
 M. Al-Rubaiai et al. 2019,Piezoresistive,1,Material,1,FDM,1,0,0.02,-4.00E-01,33.33333333,b,Carbon,1,a,FDM-b,Material-a
 R. Chirila et al. 2022,Piezoresistive,1,Material,1,FDM,1,0,0.167,4.00E-01,2.395209581,b,Carbon,1,a,FDM-b,Material-a
@@ -21,7 +21,7 @@ P. Karipoth et al. 2023,Piezoresistive,1,Material,1,AJP,4,0,-0.0077,-4.34E-01,99
 T. Rahman et al. 2018,Piezoresistive,1,Material,1,AJP,4,0,0.001,3.28E-03,3.28,b,Metal,2,a,AJP-b,Material-a
 Y. Zhang et al. 2023,Piezoresistive,1,Material,1,AJP,4,0,0.25,5.80E+00,23.2,b,Metal,2,b,AJP-b,Material-b
 Q. Mu et al. 2017,Piezoresistive,1,Material,1,DLP,5,0,0.021,8.00E-01,38.0952381,b,Carbon,1,b,DLP-b,Material-b
-T. Xiao et al. 2021*,Piezoresistive,1,Material,1,DLP,5,0,0.6,3.80E+00,6.333333333,b,Carbon,1,b,DLP-b,Material-b
+T. Xiao et al. 2021,Piezoresistive,1,Material,1,DLP,5,0,0.6,3.80E+00,6.333333333,b,Carbon,1,b,DLP-b,Material-b
 Z. Pei et al. 2021,Piezoresistive,1,Porous,4,DLP,5,0,0.675,1.78E+00,2.64,a,Carbon,1,b,DLP-a,Porous-b
 T. Resendes et al. 2024,Piezoresistive,1,Material,1,SLS,7,0,0.04,1.54E+00,38.51508121,a,Wire,4,a,SLS-a,Material-a
 Q. Mu et al. 2017,Capacitance,2,Displacement,6,DLP,5,0,-0.7,1.60E-01,0.228571429,b,Carbon,1,b,DLP-b,Displacement-b
