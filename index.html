@@ -4,14 +4,22 @@
     <meta charset="utf-8" />
     <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1600px;
+            background: #f9f9f9;
+        }
         .description-box {
-            width: 1440px;
+            width: 100%;
             margin: 20px auto;
             text-align: center;
             font-size: 20px;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 8px;
+            background: #fff;
         }
         .section-title {
             text-align: center;
@@ -19,55 +27,70 @@
             margin-top: 40px;
             margin-bottom: 20px;
         }
+        /* Wrap each plot grid in a scrollable container for horizontal scroll on small screens */
+        .scroll-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; /* smoother scrolling on iOS */
+            width: 100%;
+            margin-bottom: 20px;
+        }
         .plot-grid {
             display: grid;
-            grid-template-columns: repeat(2, 700px);
+            grid-template-columns: repeat(2, 700px); /* 2 columns, each 700px wide */
             grid-gap: 20px;
             justify-content: center;
+            /* Prevent horizontal compression on small screens */
+            min-width: 1400px;
         }
     </style>
 </head>
 <body>
 
-    <div class=\"description-box\">
-    <h2>Interactive Visualization Proof-of-Concept</h2>
-    <p>This interactive visualization demonstrates a proof-of-concept implementation for the plots originally presented in Figures 7 and 8 of the following paper:</p>
-
-    <h3>Advances in 3D Printed Electromechanical Sensors: Performance Comparison, Trends, and Future Directions</h3>
-    <p><strong>Authors:</strong> Anders Frem Wolstrup, Jon Spangenberg, Akio Yamamoto, Andrew Gleadall, Gabriel Zsurzsan</p>
-
-    <h4>Abstract:</h4>
-    <p>
-    3D printing has revolutionized electromechanical sensor design, enabling rapid prototyping and complex geometries, and driving significant growth in this research field. However, as more sensors are developed using diverse printing methods and sensing mechanisms, the need for standardized reporting and comparative metrics becomes increasingly critical. Without such metrics, new sensors cannot be properly contextualized or benchmarked against the state of the art, slowing progress in the field.
-    <br><br>
-    This review addresses this gap by cataloguing key performance metrics from the literature, including input/output range, sensitivity, mechanical and electrical properties, and the specific 3D printing processes used, to enable meaningful comparison. These metrics are applied to quantitatively analyze 74 sensors reported across different additive manufacturing techniques. Additionally, underreported characteristics such as hysteresis, drift, and long-term stability are considered to provide a more complete assessment of sensor performance.
-    <br><br>
-    Beyond quantitative comparison, this review introduces a framework for categorizing sensors based not only on electrical output type (e.g., resistive, capacitive) but also on the underlying sensing basis, distinguishing whether the response arises from intrinsic material properties (e.g., quantum tunneling, percolation) or from structure-induced mechanisms (e.g., constriction resistance).
-    <br><br>
-    The review also highlights advances in 3D printing for electronics manufacturing to inspire future directions and concludes with six recommendations for sensor development, focusing on aligning sensing mechanisms with appropriate fabrication strategies and aiding metric standardization across the field.
-    </p>
-
-    <strong>Note:</strong> This is a proof-of-concept interface. The plots are based on .csv data files and generated using the Python notebook included in the GitHub repository.
-    You can access the full repository here: 
-    <a href="https://github.com/AWolstrup/Awolstrup.github.io" target="_blank" class="text-blue-600 underline">https://github.com/AWolstrup/Awolstrup.github.io</a>.
+    <div class="description-box">
+        <h2>Interactive Visualization Proof-of-Concept</h2>
+        <p>This interactive visualization demonstrates a proof-of-concept implementation for the plots originally presented in Figures 7 and 8 of the following paper:</p>
+    
+        <h3>Advances in 3D Printed Electromechanical Sensors: Performance Comparison, Trends, and Future Directions</h3>
+        <p><strong>Authors:</strong> Anders Frem Wolstrup, Jon Spangenberg, Akio Yamamoto, Andrew Gleadall, Gabriel Zsurzsan</p>
+    
+        <h4>Abstract:</h4>
+        <p>
+        3D printing has revolutionized electromechanical sensor design, enabling rapid prototyping and complex geometries, and driving significant growth in this research field. However, as more sensors are developed using diverse printing methods and sensing mechanisms, the need for standardized reporting and comparative metrics becomes increasingly critical. Without such metrics, new sensors cannot be properly contextualized or benchmarked against the state of the art, slowing progress in the field.
+        <br><br>
+        This review addresses this gap by cataloguing key performance metrics from the literature, including input/output range, sensitivity, mechanical and electrical properties, and the specific 3D printing processes used, to enable meaningful comparison. These metrics are applied to quantitatively analyze 74 sensors reported across different additive manufacturing techniques. Additionally, underreported characteristics such as hysteresis, drift, and long-term stability are considered to provide a more complete assessment of sensor performance.
+        <br><br>
+        Beyond quantitative comparison, this review introduces a framework for categorizing sensors based not only on electrical output type (e.g., resistive, capacitive) but also on the underlying sensing basis, distinguishing whether the response arises from intrinsic material properties (e.g., quantum tunneling, percolation) or from structure-induced mechanisms (e.g., constriction resistance).
+        <br><br>
+        The review also highlights advances in 3D printing for electronics manufacturing to inspire future directions and concludes with six recommendations for sensor development, focusing on aligning sensing mechanisms with appropriate fabrication strategies and aiding metric standardization across the field.
+        </p>
+    
+        <strong>Note:</strong> This is a proof-of-concept interface. The plots are based on .csv data files and generated using the Python notebook included in the GitHub repository.
+        You can access the full repository here:
+        <a href="https://github.com/AWolstrup/Awolstrup.github.io" target="_blank" class="text-blue-600 underline">https://github.com/AWolstrup/Awolstrup.github.io</a>.
     </div>
     
     <div class="section-title">Force</div>
-    <div class="plot-grid">
-        <div id="force-left" style="width:700px;height:700px;"></div>
-        <div id="force-right" style="width:700px;height:700px;"></div>
+    <div class="scroll-container">
+        <div class="plot-grid">
+            <div id="force-left" style="width:700px;height:700px;"></div>
+            <div id="force-right" style="width:700px;height:700px;"></div>
+        </div>
     </div>
     
     <div class="section-title">Pressure</div>
-    <div class="plot-grid">
-        <div id="pressure-left" style="width:700px;height:700px;"></div>
-        <div id="pressure-right" style="width:700px;height:700px;"></div>
+    <div class="scroll-container">
+        <div class="plot-grid">
+            <div id="pressure-left" style="width:700px;height:700px;"></div>
+            <div id="pressure-right" style="width:700px;height:700px;"></div>
+        </div>
     </div>
     
     <div class="section-title">Strain</div>
-    <div class="plot-grid">
-        <div id="strain-left" style="width:700px;height:700px;"></div>
-        <div id="strain-right" style="width:700px;height:700px;"></div>
+    <div class="scroll-container">
+        <div class="plot-grid">
+            <div id="strain-left" style="width:700px;height:700px;"></div>
+            <div id="strain-right" style="width:700px;height:700px;"></div>
+        </div>
     </div>
 
     <script>
